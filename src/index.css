@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-calendar-picker-indicator {
+  opacity: 1;
+  filter: invert(1);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* continue with line after and before */
+
+.ContinueWith:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  margin-top: 12px;
+  width: 33%;
+  height: 1px;
+  background-color: #595959;
+}
+.css-13ep12v {
+ object-fit: cover !important;
+}
+.filter-select .css-14tippp-control {
+  border-bottom: 1px solid #555 !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  margin-bottom: 4px;
+}
+.ContinueWith:before {
+  content: "";
+  position: absolute;
+  right: 0px;
+  margin-top: 12px;
+  width: 33%;
+  height: 1px;
+  background-color: #595959;
+}
+
+@media only screen and (max-width: 1024px) {
+  .ContinueWith:after {
+    width: 25%;
+  }
+  .ContinueWith:before {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .ContinueWith:after {
+    width: 15%;
+  }
+  .ContinueWith:before {
+    width: 15%;
+  }
+}
+
+/* customize scrollbar starts */
+/* Track */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #101010;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffffff40;
+  border-radius: 4px;
+
+}
+
+/* customize scrollbar ends here */
+
+/* custom tooltip starts */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.marginLeft {
+  margin-left: -10px;
+}
+
+.tooltip .tooltiptext.light {
+  background-color: #ffffff;
+  color: #333333;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.tooltip .tooltiptext.dark {
+  background-color: #555555;
+  color: #ffffff;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  position: absolute;
+  width: 144px;
+  text-align: left;
+  padding: 4px 6px;
+  border-radius: 6px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip-right {
+  top: -5px;
+  left: 120%;
+}
+
+.tooltip-right::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #555 transparent transparent;
+}
+
+/* custom tooltip ends */

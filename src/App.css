@@ -1,0 +1,101 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+body {
+  background: #101010;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.css-tj5bde-Svg {
+  display: inline-block;
+  fill: grey !important;
+  line-height: 1;
+  stroke: currentColor;
+  stroke-width: 0;
+}
+.css-1dx7thq-AvatarImage {
+  object-fit: cover !important;
+}
+.css-f9erq9-Stack {
+  z-index: 25;
+}
+input[type="text"] {
+  color: white;
+}
+.css-1dimb5e-singleValue {
+  color: white !important;
+}
+.css-14tippp-control {
+  color: white !important;
+}
+input#react-select-3-input {
+  color: white !important;
+}
+input#react-select-5-input {
+  color: white !important;
+}
+
+  input#react-select-2-input {
+    color: white !important;
+  }
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.fc .fc-toolbar.fc-header-toolbar {
+  margin: 2rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .fc .fc-toolbar.fc-header-toolbar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem 0;
+  }
+}
+
+input[type="email"] {
+  text-transform: lowercase;
+}
+::placeholder {
+  text-transform: capitalize;
+}
+
+.spinner-css {
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 100% !important;
+  border-width: 5px !important;
+}
